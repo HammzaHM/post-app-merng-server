@@ -1,0 +1,1 @@
+# MERNG STACK application

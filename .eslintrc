@@ -1,0 +1,3 @@
+{
+    "extends": ["standard", "eslint:recommended"]
+}

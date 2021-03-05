@@ -1,0 +1,35 @@
+{
+  "name": "post-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node index.js",
+    "start-node": "nodemon index.js --exec babel-node",
+    "start-react": "cd client && yarn start",
+    "build": "babel index.js -d dist",  
+    "start": "npm run build && node dist/index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.5.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0", 
+    "eslint-config-standard": "^16.0.2",
+    "graphql": "^15.4.0",
+    "graphql-tools": "^2.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1", 
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.5",
+    "prettier": "^2.2.1"
+  }
+}
